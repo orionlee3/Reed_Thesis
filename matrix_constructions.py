@@ -2,7 +2,9 @@ import numpy as np
 from numpy.linalg import multi_dot
 from scipy.linalg import block_diag
 
-def TAMatrix(sin,cos):
+
+
+def TAMatrix(amat,sin,cos):
     phases = (2*np.pi)*np.random.random_sample(3)
     
     matrix_one = np.array([[1,0],[0,np.exp(-1j*phases[0])]])
@@ -11,7 +13,7 @@ def TAMatrix(sin,cos):
 
     return (1/cos)*multi_dot([matrix_one,matrix_two,matrix_three])
             
-def TBMatrix(sin,cos):   
+def TBMatrix(bmat,sin,cos):   
     
     phases = (2*np.pi)*np.random.random_sample(3)
     
