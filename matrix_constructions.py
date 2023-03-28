@@ -4,7 +4,7 @@ from scipy.linalg import block_diag
 
 
 
-def TAMatrix(amat,sin,cos):
+def TAMatrix(sin,cos):
     phases = (2*np.pi)*np.random.random_sample(3)
     
     matrix_one = np.array([[1,0],[0,np.exp(-1j*phases[0])]])
@@ -13,7 +13,7 @@ def TAMatrix(amat,sin,cos):
 
     return (1/cos)*multi_dot([matrix_one,matrix_two,matrix_three])
             
-def TBMatrix(bmat,sin,cos):   
+def TBMatrix(sin,cos):   
     
     phases = (2*np.pi)*np.random.random_sample(3)
     
