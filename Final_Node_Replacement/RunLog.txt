@@ -1,0 +1,4 @@
+strip_width = 16 
+strip_length = 10000 
+Probability = 1 
+theta_start, theta_end, theta_amount = 0.3141592653589793, 1.4959965017094252, 15 

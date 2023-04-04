@@ -1,0 +1,4 @@
+This run is to find the critical exponent, the parameters are specified below we will call this Run1strip_width = 16 
+strip_length = 100000 
+Probability = 1 
+theta_start, theta_end, theta_amount = 0.20943951023931953, 1.3089969389957472, 20 

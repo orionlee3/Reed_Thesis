@@ -5,7 +5,7 @@ from scipy.linalg import block_diag
 
 
 def TAMatrix(sin,cos):
-    phases = [(2*np.pi)*np.random.random_sample(3)
+    phases = (2*np.pi)*np.random.random_sample(3)
     
     matrix_one = np.array([[1,0],[0,np.exp(-1j*phases[0])]])
     matrix_two = np.array([[1,-sin],[-sin,1]])
